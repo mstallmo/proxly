@@ -28,6 +28,7 @@ Gem::Specification.new do |spec|
     end
 
   spec.add_dependency "rails", "~> 7.0", ">= 7.0.4.3"
+  spec.add_dependency "faraday", "~> 2.7", ">= 2.7.4"
 
   spec.add_development_dependency "rspec-rails", "~> 6.0", ">= 6.0.1"
   spec.add_development_dependency "standard", "~> 1.25", ">= 1.25.1"
