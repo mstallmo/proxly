@@ -27,11 +27,11 @@ Gem::Specification.new do |spec|
       Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
     end
 
-  spec.add_dependency "rails", ">= 7.0.3"
+  spec.add_dependency "rails", "~> 7.0", ">= 7.0.4.3"
 
   spec.add_development_dependency "rspec-rails", "~> 6.0", ">= 6.0.1"
-  spec.add_development_dependency "standard"
-  spec.add_development_dependency "rubocop-rails"
-  spec.add_development_dependency "rubocop-rspec"
-  spec.add_development_dependency "rubocop-config-prettier"
+  spec.add_development_dependency "standard", "~> 1.25", ">= 1.25.1"
+  spec.add_development_dependency "rubocop-rails", "~> 2.18"
+  spec.add_development_dependency "rubocop-rspec", "~> 2.19"
+  spec.add_development_dependency "rubocop-config-prettier", "~> 0.1.13"
 end
