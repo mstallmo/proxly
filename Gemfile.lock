@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    proxly (0.1.1)
+    proxly (0.1.2)
       rails (~> 7.0, >= 7.0.4.3)
 
 GEM

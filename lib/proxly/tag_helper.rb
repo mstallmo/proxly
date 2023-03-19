@@ -1,5 +1,5 @@
 module Proxly
-  class TagHelper
+  module TagHelper
     extend ActionView::Helpers::AssetTagHelper
 
     def self.javascript_include_tag(*sources)
