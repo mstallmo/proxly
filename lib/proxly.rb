@@ -1,6 +1,6 @@
 require "proxly/version"
 require "proxly/railtie"
-require "proxly/tag_helper"
+require "proxly/host_router"
 
 module Proxly
   mattr_accessor :host, :port
