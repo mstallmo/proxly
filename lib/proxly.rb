@@ -3,8 +3,8 @@ require "proxly/railtie"
 require "proxly/tag_helper"
 
 module Proxly
-  mattr_accessor :proxy_host
-  mattr_accessor :proxy_protocol, default: "https"
+  mattr_accessor :host
+  mattr_accessor :protocol, default: "https"
 
   def self.setup
     yield self
