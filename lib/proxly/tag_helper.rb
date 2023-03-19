@@ -3,9 +3,18 @@ module Proxly
     extend ActionView::Helpers::AssetTagHelper
 
     def self.javascript_include_tag(*sources)
-      if Proxly.proxy_host
-        sources.last[:host] = Proxly.proxy_host
-        sources.last[:protocol] = Proxly.proxy_protocol
+      if Proxly.host
+        sources.last[:host] = Proxly.host
+        sources.last[:protocol] = Proxly.protocol
+      end
+
+      super(*sources)
+    end
+
+    def self.stylesheet_link_tag(*sources)
+      if Proxly.host
+        sources.last[:host] = Proxly.host
+        sources.last[:protocol] = Proxly.protocol
       end
 
       super(*sources)
