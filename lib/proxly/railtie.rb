@@ -5,7 +5,7 @@
 
 module Proxly
   class Railtie < ::Rails::Railtie
-    initializer "proxly.tag_helper", after: :load_config_initializers do
+    initializer "proxly.host_router", after: :load_config_initializers do
       unless Rails.env.production?
         ActiveSupport.on_load(:action_controller_base) do
           include Proxly::HostRouter
